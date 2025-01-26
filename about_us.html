@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about us</title>
+    <meta name="description" content="A brief description of your webpage's content.">
+    <link rel="stylesheet" href="styles.css">
+    
+    <style>
+      
+        *{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  /* Sets the base font for the page */
+        }
+            .container {
+            display: flex;
+            gap: 15px;  /* Adds spacing between items */
+        }
+        
+
+        .topnav {
+            background-color: #7b141e;  /* Set background color for the navigation bar */
+            
+        }
+
+        .navbar-nav .nav-link {
+            color: #dfa196;
+            font-family: 'Gill Sans', Gill sans MT, Calibri, sans-serif;
+            font-size: 17px;
+        }
+
+        .navbar-nav .nav-link:hover {
+            background-color: #8f262b;  /* Change background color on hover */
+            color: #ffffff;  /*change text colour on hover*/
+        }
+
+        .navbar-nav .nav-link.active {
+            background-color: rgb(193, 144, 144);  /* Style for active nav link */
+            color: #7b141e;
+        }
+        .abcolor{
+            background-color: ivory;  /* Background color for section */
+            height: 280px;  
+            
+        }
+        .contentcontainer{
+            display: flex;
+            gap:120px;
+        }
+        .text h2{
+            margin-top: 50px;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: #aa695e;
+            margin-left: 40px;   /* Adds margin to left */
+
+        }
+        .text p{
+
+            color: #7b141e;   /* Sets text color */
+            font-size: medium;
+            margin-left: 40px;
+       
+        }
+        
+        .pic1 img {
+            height: 250px;
+            width: 300px;
+            margin-right: 100px;
+            border-radius: 10px;  /* Rounds image corners */
+         
+          }
+
+            
+        .miscolor{
+            background-color: rgb(251, 249, 251);  /* Light background color */
+            margin-top: 50px;
+            height:300px;
+          
+        }
+        .container2{
+            display: flex;
+            gap:50px; /* Adds spacing between items */
+        }
+
+        .text2 h2{
+          
+            color: #aa695e;  /* Sets text color */
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin-top: 10px;
+       
+        }
+
+        .highlighted-text {
+            background-color: #fff7e6; /* Light pastel background */
+            padding: 15px;
+            border-left: 5px solid #7b141e;  /* Adds a left border */
+        }
+
+        .text2 p{
+            color: #7b141e;
+            font-size: medium;
+            margin-right: 60px;  /* Adds margin to the right */
+            margin-top: 20px;
+            font-size: large;
+        }
+
+        .text2{
+            flex:1;   /* Ensures the text takes up remaining space in Flexbox layout */
+        }
+        
+        .pic2 img{
+            object-fit: cover;  /* Ensures the image covers its container without stretching */
+            border-radius: 20px;
+            height: 250px;
+            padding-left: 40px;
+        }
+
+
+        .stcolor{
+            background-color: ivory ;  /* Light background color */
+            height:300px;
+            margin-top: 20px;
+        }
+
+        .container3{
+            display: flex;
+            gap: 40px;
+        }
+
+        .text h2, .text2 h2, .text3 h2 {
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);   /* Adds subtle shadow effect to headers */
+        }
+
+
+        .text3 h2{
+            margin-top: 40px;
+            margin-left: 40px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: #aa695e;
+        }
+        .text3 p{
+            font-size: large;
+            color: #7b141e;   /* Sets text color */
+            margin-left: 50px;
+        }
+      
+        .pic3 img{
+            border-radius: 20px;
+            height: 250px;
+            margin-right: 20px;
+            margin-top: 40px;  /* Adds margin to top */
+        }
+        
+
+      .email-subscription {
+            text-align: center;
+            padding: 30px;
+            background-color: #f9f9f9;
+            margin-top: 30px;
+        }
+
+      .email-subscription p {
+            font-size: 16px;
+            margin-bottom: 20px;  /* Adds space below the text */
+            color: #7b141e;
+      }
+
+      .email-input-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;  /* Vertically centers the content */
+            border-bottom: 2px solid #7b141e;
+            padding: 5px 0;
+            width: 100%;
+            max-width: 400px;
+            margin: auto;  /* Centers the container horizontally */
+      }
+
+      .email-input {
+            border: none;
+            outline: none;    /* Removes outline */
+            font-size: 16px;
+            width: 80%;
+            padding: 5px;
+      }
+
+      .email-input::placeholder {
+            color: gray;  /* Sets color of the placeholder text */
+      }
+
+      .email-submit {
+            background: none;
+            border: none;
+            cursor: pointer;   /* Changes cursor to pointer on hover */
+       }
+
+      .email-submit img {
+            width: 24px;
+            height: 24px;
+      }
+
+      .achievements-section {
+            padding: 60px 20px;  /* Adds padding around the entire achievements section */
+            background-color: #f7e8e7;  /* Soft light background to contrast with maroon */
+            text-align: center;  /* Centers the content (text and cards) horizontally */
+            color: #7b141e;  /* Maroon color for text */
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      }
+
+      .achievements-section h2 {
+            font-size: 2em;
+            color: #7b141e;  /* Maroon */
+            margin-bottom: 40px;
+            font-weight: bold;
+            text-transform: uppercase;  /* Converts the text to uppercase */
+            letter-spacing: 2px;
+            background-color: #fff;  /* White background behind title */
+            padding: 10px;
+            display: inline-block;  /* Makes the heading inline, with padding and background applying */
+            border-radius: 10px;
+      }
+
+      .achievements-container {
+            display: flex;
+            justify-content: center;  /* Centers the achievement cards horizontally */
+            gap: 40px;
+            flex-wrap: wrap;  /* Allows cards to wrap to the next row on smaller screens */
+            margin-top: 30px;
+      }
+
+      .achievement-card {
+            background-color: #fff;  /* White background for each card */
+            padding: 25px;
+            width: 260px;
+            min-height: 300px;  /* Ensures a minimum height for consistent appearance */
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);  /* Subtle shadow to give a raised effect */
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;  /* Smooth transitions on hover effects */
+            position: relative;  /* Ensures child elements can be positioned relative to the card */
+      }
+
+      .achievement-card img {
+            max-width: 80%;
+            height: auto;
+            object-fit: contain;  /* Ensures the image fits neatly within its container */
+            border-radius: 10px;
+            margin-bottom: 15px;
+      }
+
+      .achievement-card h3 {
+            font-size: 1.6em;  /* Slightly larger font size for the title */
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #7b141e;  /* Maroon heading color */
+            text-transform: uppercase;
+      }
+
+      .achievement-card p {
+            font-size: 1.2em;  /* Slightly larger font size for card description */
+            margin-bottom: 15px;
+            line-height: 1.4;
+            color: #7b141e;  /* Maroon color */
+      }
+
+      .achievement-card:hover {
+            transform: translateY(-10px);  /* Moves the card upwards slightly on hover */
+            box-shadow: 0 16px 30px rgba(0, 0, 0, 0.2);  /* Enhances the shadow on hover for a lifted effect */
+            background-color: #f1c4c4;  /* Soft pink on hover */
+      }
+
+      .achievement-card::before {
+            
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border-radius: 20px;  /* Matches the card's rounded corners */
+            z-index: 1;  /* Places the overlay behind the card content */
+      }
+
+      /* Hover background color changes for specific cards */
+      .achievements-container .achievement-card:nth-child(1):hover {
+            background-color: #f8d3d3;  /* Light blush pink for Eco-Friendly card */
+      }
+
+      .achievements-container .achievement-card:nth-child(2):hover {
+            background-color: #f5d3e3;  /* Soft lavender for Happy Cuddles card */
+      }
+
+      .achievements-container .achievement-card:nth-child(3):hover {
+            background-color: #fbe0a6;  /* Soft yellow for Handcrafted with Love card */
+      }
+
+      .achievements-container .achievement-card:nth-child(4):hover {
+            background-color: #f7b9c0;  /* Rose pink for Community Support card */
+      }
+      
+      footer {
+                    
+                    color: white; 
+                    font-family: 'Gill Sans', Gill sans MT, Calibri, sans-serif; 
+                }
+                .footercontaier{
+                    color: white; 
+                    margin-left: 0px;
+                    background-color: #7b141e; 
+                    display: flex;
+                    gap:160px;
+                }
+                .footer-section {
+                    flex: 1 1 200px; /* Allow sections to grow and take equal space */
+                    margin-right: 20px;
+                }
+
+                .footer-emails, .footer-links, .footer-policies {
+                    text-align: left;
+                }
+
+                .footer-emails h3, .footer-links h3, .footer-policies h3 {
+                    margin-bottom: 10px;
+                }
+
+                .footer-emails span, .footer-links span, .footer-policies span {
+                    display: block;
+                    margin: 5px 0;
+                    cursor: pointer;
+                }
+
+                .footer-emails span:hover, .footer-links span:hover, .footer-policies span:hover {
+                    text-decoration: underline;
+                    color:#dfa196;
+                }
+
+                .footer-logo img {
+                    margin-right: 200px;
+                    max-width: 250px;
+                }
+                .footer-emails a, .footer-links a, .footer-policies a {
+                    color: #ffffff; /* Making the a href look better by chaning the color and removing the underline */
+                    text-decoration: none; 
+                }
+                .footer-reserved {
+                    text-align: center;
+                    font-size: 16px;
+                    width:100%;
+                    font-weight: bold;
+                    background-color: #e9b6bb;
+                    color: #34040b;
+                }
+    
+
+      .pastel-box {
+            background-color: #ffe8e8; /* Light pink */
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+            font-size: 1.1rem;   /* Slightly larger text for better readability */
+      }
+
+
+      .framed-paragraph {
+            border: 2px dashed #ffb3b3;  /* Dashed border with a soft pink color */
+            padding: 15px;
+            border-radius: 12px;
+            margin-bottom: 20px;  /* Adds space below the paragraph */
+      }
+
+      /* top Section */
+      .top {
+            background: linear-gradient(120deg, #7b141e, #dfa196);  /* Gradient background from maroon to light beige */
+            color: white;
+            padding: 50px 20px;  /* Adds generous padding around the content */
+            text-align: center;
+            margin-bottom: 20px;
+            height: 250px;
+            
+      
+        }
+
+      .top h1 {
+            font-size: 3rem; /*large size for heading*/
+            margin-bottom: 10px;  /* Adds space below the heading */
+      
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      }
+
+      .top p {
+            font-size: 1.2rem;   
+            margin-bottom: 20px;
+            font-family: 'Times New Roman', Times, serif;
+    }
+
+
+      /* Scroll to Top Button */
+      #scrollToTopBtn {
+           position: fixed;
+           bottom: 20px;
+           right: 20px;
+           background-color: #1a202c;
+           color: white;
+           padding: 10px 15px;
+           border: none;
+           border-radius: 5px;
+           font-size: 16px;
+           cursor: pointer;
+           display: none; /* Hidden initially */
+           transition: background-color 0.3s;
+    }
+
+    #scrollToTopBtn:hover {
+           background-color: #555;
+    }
+
+  
+  </style>
+  </head>
+
+
+  <body>
+    <!-- Viewport meta tag for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Linking Bootstrap CSS for styling and grid system -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Linking Bootstrap JS for interactive components (e.g., navigation toggler) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
+
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid topnav">
+          <a class="navbar-brand d-flex align-items-center" href="#">
+              <img src="navimg.png" alt="Logo" style="width: 40px; height: 40px; margin-right: 10px;">
+              <span style="font-family:'Gill Sans', Gill sans MT, Calibri, sans-serif; color:white">Softie Sanctuary</span>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                  <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="home_pageextra.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="best_selling.html">Most Sold</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="shop.html">Shop</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="buildabear.html">Build A Bear</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="cart.html">Cart</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="howitsmade.html">How it's Made</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="makers.html">Meet The Makers</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="about_us.html">About Us</a>
+                  </li>
+              </ul>
+              <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                      <a class="nav-link" href="log_in.html">Login</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="signup.html">Sign Up</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+
+       <!-- top Section -->
+  <div class="top">
+    <h1><span>🐻</span> Welcome to Softie Sanctuary <span>🐻</span> </h1>  <!-- Main heading with cute bear emoji -->
+    <p><span>✨</span> Your go-to place for soft, sustainable cuddles!<span>✨</span> </p>
+    
+  </div>
+
+
+    <!-- About Us Section -->
+
+      <div class="abcolor">
+        <div class="contentcontainer">
+          <div class="text">
+            <h2 ><span> 🎀</span> About Us</h2>
+
+        
+            <p class="framed-paragraph">Welcome to Softie Sanctuary, where the magic of cuddles comes to life! Softie Sanctuary is your go-to place for the softest and most lovable stuffed toys. Created by four friends with a passion for crafting the perfect cuddle companion, our plushies are designed to bring comfort and joy to people of all ages. Whether you're looking for a new friend or a thoughtful gift, you’ll find a furry companion here.
+          
+
+            </p>
+          </div>
+           <!-- Image of a teddy bear -->
+          <div class="pic1">
+          <img src ="https://img.fruugo.com/product/1/19/571007191_0340_0340.jpg" alt="A cute teddy bear sitting on a chair"> 
+          </div>
+
+        </div>
+      </div>
+
+       <!-- Section with the 'Our Mission' content -->     
+    <div class="miscolor">
+
+      <div class="container2">
+        <div class="pic2">
+            <img src="https://cdn01.pinkoi.com/product/sVWMxsJf/0/640x530.jpg">
+            </div>
+        <div class="text2">
+          <h2>Our Mission<span>🐾</span></h2>
+
+        <!-- Mission description with a pastel background box -->
+
+          <p class="pastel-box" >At Softie Sanctuary, we believe in spreading happiness, one cuddle at a time, while caring for the planet we call home. Our mission is to create the softest, most endearing stuffed toys that bring warmth and smiles to people of all ages—without compromising on sustainability.
+      
+        Crafted with care, our plushies are made from eco-friendly materials, including recycled fabrics and biodegradable stuffing, ensuring that every hug is gentle on the environment. Whether you're looking to relive childhood nostalgia or brighten someone's day, Softie Sanctuary offers companions that are as kind to the Earth as they are to your heart.</p>
+        </div>
+      </div>
+    </div>
+
+      <!--Our Story-->
+
+      <div class="stcolor">
+        <div class="container3">     <!-- Container for the story section -->
+          <div class="text3">
+            <h2><span>🧸</span>Our Story</h2>
+            <p class="framed-paragraph">Softie Sanctuary was born from a simple idea shared by four friends who wanted to create more than just toys. We wanted to make stuffed animals that bring comfort, joy, and a little bit of magic to everyone—while also caring for the planet.
+              
+              After countless conversations, brainstorming, and a shared love for plushies, we decided to combine our passion for sustainability and design to create cuddly companions made from eco-friendly materials. Our mission is simple: to craft the softest, most lovable toys that bring smiles to all ages, without compromising the Earth we cherish.
+              
+              At Softie Sanctuary, every plushie is crafted with care, love, and a deep commitment to sustainability. Thank you for being part of our journey!</p>
+
+          </div>
+
+          <!-- Image related to our story -->
+          <div class="pic3">
+            <img src="https://www.bears4u.co.uk/wp-content/uploads/2022/04/Personalised-Teddy-Why-Teddy-Bears-are-an-Important-Part-of-Growing-Up-Blog-Image-300x180.jpg">
+
+          </div>
+        </div>
+      </div>
+       
+          
+        <!-- Achievements -->
+      <div class="achievements-section">
+        <h2>Our Achievements</h2>
+          <div class="achievements-container">    <!-- Container to hold all achievement cards -->
+
+            <!-- Achievement card: Eco-Friendly -->
+
+              <div class="achievement-card">
+                  <div class="card-content">
+                      <img src="https://jeremyshomestore.co.uk/wp-content/uploads/2024/07/Palm-Pals-Eve-Earth.jpg" alt="Eco-Friendly">
+                      <h3>Eco-Friendly</h3>
+
+                       <!-- Description of the achievement -->
+
+                      <p>Our plushies are made with 100% recycled materials, ensuring your cuddles are both soft and sustainable.</p>
+                  </div>
+              </div>
+
+               <!-- Achievement card: Happy Cuddles -->
+
+
+              <div class="achievement-card">
+                  <div class="card-content">
+                      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6GFsmbgeB3AviXivnXtBlIXT6TZrLWDMcZA&s" alt="Happy Cuddles">
+                      <h3>Happy Cuddles</h3>
+
+                        <!-- Description of the achievement -->
+
+                      <p>Thousands of happy customers have embraced our stuffed companions, sharing the joy of softness!</p>
+                  </div>
+              </div>
+
+               <!-- Achievement card: Handcrafted with Love -->
+
+              <div class="achievement-card">
+                  <div class="card-content">
+                      <img src="https://www.shutterstock.com/image-photo/photo-white-handmade-heartshaped-soft-260nw-126895133.jpg" alt="Handcrafted with Love">
+                      <h3>Handcrafted with Love</h3>
+
+                     <!-- Description of the achievement -->
+
+                      <p>Each plushie is carefully handcrafted, ensuring every stitch brings a unique touch to your collection.</p>
+                  </div>
+              </div>
+
+                <!-- Achievement card: Community Support -->
+
+              <div class="achievement-card">
+                  <div class="card-content">
+                      <img src="https://bearegards.com/cdn/shop/articles/Where_to_Donate_Stuffed_Animals_for_Kids_-_bearegards.jpg?v=1681639543&width=1100" alt="Community Support">
+                      <h3>Community Support</h3>
+
+                      <!-- Description of the achievement -->
+
+                      <p>Softie Sanctuary has donated over 1,000 plushies to children’s hospitals, spreading comfort and joy worldwide.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+        <!-- Email Subscription Section -->
+
+        <div class="email-subscription">
+          <p>Enter your email to receive the latest store news, special offers, exclusive discounts, and other useful information.</p>   <!-- Prompt for users to subscribe -->
+          <div class="email-input-container">
+              <input type="email" placeholder="Enter your email" class="email-input">    <!-- Input field for the user's email -->
+              <button class="email-submit">    <!-- Submit button with an image as an icon -->
+                  <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" alt="Submit">
+              </button>
+          </div>
+        </div>
+        
+
+        <div class="footercontaier">
+          <div class="footer-emails">
+          
+              <h3>Contact Emails</h3>
+              <span>i242504@isb.nu.edu.pk</span>
+              <span>i242524@isb.nu.edu.pk</span>
+              <span>i242058@isb.nu.edu.pk</span>
+              <span>i242522@isb.nu.edu.pk</span>
+          </div>
+          <div class="footer-links">
+              <h3>User</h3>
+              <a href="log_in.html"><span>Login</span></a>
+              <a href="signup.html"><span>Sign Up</span></a>
+              <a href="cart.html"><span>Cart</span></a>
+          </div>
+          <div class="footer-links">
+              <h3>Connect With Us</h3>
+              <a href="https://www.instagram.com/"><span>Instagram</span></a>
+              <a href="https://www.facebook.com/"><span>Facebook</span></a>
+              <a href="https://www.twitter.com/"><span>Twitter</span></a>
+          </div>
+          <div class="footer-policies">
+              <h3>Policies</h3>
+              <a href="https://policies.google.com/faq?hl=en"><span>FAQs and Queries</span></a>
+              <a href="https://policies.google.com/terms?hl=en"><span>Conditions and Agreement</span></a>
+              <a href="https://policies.google.com/privacy?hl=en"><span>Privacy Policy</span></a>
+          </div>
+          <div class="footer-logo">
+              <img src="final logo.png" alt="Company Logo">
+          </div>
+      </div>
+      <div class="footer-reserved">
+          <span>Softie Sanctuary &copy; 2024, All Rights Reserved</span>
+      </div>
+    
+    </footer>
+        <!-- Scroll to Top Button -->
+        <button id="scrollToTopBtn">↑ Top</button>
+      
+        <script>
+          // Get the button
+          const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+      
+          // Show the button when the user scrolls down
+          window.onscroll = function() {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+              scrollToTopBtn.style.display = 'block'; // Show button
+            } else {
+              scrollToTopBtn.style.display = 'none'; // Hide button
+            }
+          };
+      
+          // Scroll to the top when the button is clicked
+          scrollToTopBtn.onclick = function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' }); // Smooth scroll to top
+          };
+        </script>
+
+        
+      
+        
+        
+   </body>
+</html>
